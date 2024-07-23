@@ -1,0 +1,20 @@
+.img-card-producto{
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover; 
+}
+
+
+.producto-card{
+    min-height: 377px;
+    transition: transform 0.3s ease; /* Transición para transformaciones */
+
+    &:hover {
+        transform: scale(1.05); /* Escala ligeramente al 105% */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+}
+  
+
+  

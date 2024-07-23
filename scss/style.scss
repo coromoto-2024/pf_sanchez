@@ -1,0 +1,14 @@
+//Reset
+@import 'base/reset';
+
+//Componentes
+@import 'componentes/nav';
+@import 'componentes/card';
+@import 'componentes/header';
+@import 'componentes/hero';
+
+
+// css exclusivo para páginas
+@import 'page/index';
+@import 'page/servicio';
+@import 'page/producto';

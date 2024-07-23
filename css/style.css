@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Radio Canada Big", sans-serif;
+}
+
+body {
+  background-color: rgba(181, 172, 172, 0.4705882353);
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.nav-base {
+  padding-bottom: 0px;
+}
+.nav-base .curve {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nav-base .color {
+  background-color: rgba(149, 90, 22, 0.5294117647);
+}
+
+/***********************************************************/
+/************************ Cards *************************/
+/***********************************************************/
+.tarjetas {
+  padding: 4rem;
+  display: flex;
+}
+
+.tarjeta {
+  flex: 1;
+  background-color: sienna;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tarjeta-img {
+  width: 20rem;
+}
+
+.tarjeta-info {
+  padding: 2rem;
+}
+
+/************************************************************/
+/************************** HEADER **************************/
+/************************************************************/
+.header {
+  background-color: burlywood;
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: maroon;
+}
+
+/**********************************************************/
+/************************* HERO ***************************/
+/**********************************************************/
+.hero-content {
+  width: 60%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+.hero-presentation {
+  margin-bottom: 25px;
+}
+.hero-presentation .card-title {
+  background-color: antiquewhite;
+  height: 100px;
+}
+.hero-presentation .card-title .title {
+  margin: auto;
+}
+
+.hero {
+  height: 60vh;
+  background-image: url("../img/fondo 10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.hero .color {
+  background-color: rgba(149, 90, 22, 0.6509803922);
+}
+
+.img-card-index {
+  width: auto;
+  height: 200px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.index-card {
+  min-height: 377px;
+}
+
+.servicio-hero {
+  margin-bottom: 25px;
+}
+
+.servicio-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+.servicio-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.servicio-hero .servicio-effect {
+  transform: scale(1);
+  transition: transform 1 ease;
+}
+.servicio-hero .servicio-effect:nth-child(1) {
+  animation: enlarge-animation 1 ease 0.5s forwards;
+}
+.servicio-hero .servicio-effect:nth-child(2) {
+  animation: enlarge-animation 1 ease 1s forwards;
+}
+
+@keyframes enlarge-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.img-card-producto {
+  width: auto;
+  height: 200px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.producto-card {
+  min-height: 377px;
+  transition: transform 0.3s ease; /* Transición para transformaciones */
+}
+.producto-card:hover {
+  transform: scale(1.05); /* Escala ligeramente al 105% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}/*# sourceMappingURL=style.css.map */

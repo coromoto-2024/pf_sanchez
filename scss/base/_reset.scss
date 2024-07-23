@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+   }
+
+body{
+    background-color: #b5acac78;
+}   
+
+.pr-0{
+    padding-right: 0px;
+}
+
+.pl-0{
+    padding-left: 0px;
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap';
+
+
+@mixin hero-bottom{
+    margin-bottom: 25px;
+}
+
+
+

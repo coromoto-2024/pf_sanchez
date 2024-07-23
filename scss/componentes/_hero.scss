@@ -1,0 +1,25 @@
+
+/**********************************************************/
+/************************* HERO ***************************/
+/**********************************************************/
+.hero-content {
+    width: 60%;
+  
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+}
+
+.hero-presentation{
+    @include  hero-bottom;
+    .card-title{
+        background-color: antiquewhite;
+        height: 100px;
+        .title{
+            margin: auto;
+        }
+    }
+}

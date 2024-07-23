@@ -1,0 +1,36 @@
+
+.hero {
+    height: 60vh;
+    background-image: url("../img/fondo\ 10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .color{
+        background-color: #955a16a6;
+    }
+  
+}
+
+.img-card-index{
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover; 
+}
+
+
+.index-card{
+    min-height: 377px;
+  }
+  

@@ -1,0 +1,48 @@
+
+.servicio-hero{
+    @include  hero-bottom;
+}
+$servicio-img-wrapper-ratio: 75%; 
+
+.servicio-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: $servicio-img-wrapper-ratio; // Proporción establecida
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+
+
+$animation-duration: 1; // Duración de la animación
+$animation-delay: 0.5s; // Retraso entre animaciones
+
+.servicio-hero {
+    .servicio-effect {
+        transform: scale(1); // Estado inicial (sin escalar)
+        transition: transform $animation-duration ease; // Transición suave
+
+        &:nth-child(1) {
+            animation: enlarge-animation $animation-duration ease $animation-delay forwards;
+        }
+
+        &:nth-child(2) {
+            animation: enlarge-animation $animation-duration ease ($animation-delay * 2) forwards;
+        }
+    }
+}
+
+@keyframes enlarge-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } // Escalamos al 110% en la mitad de la animación
+    100% { transform: scale(1); } // Regresamos al tamaño original al finalizar la animación
+}
+

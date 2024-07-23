@@ -1,0 +1,27 @@
+/************************************************************/
+/************************** HEADER **************************/
+/************************************************************/
+
+.header {
+    background-color: burlywood;
+    padding: .5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 6rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: maroon;
+}
